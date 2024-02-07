@@ -2,6 +2,7 @@ public class main {
     public static void main(String[] args) {
         calcularsegundosenano();
         mostrarEnteros();
+        mostrarMultiplosde5();
     }
     public static void calcularsegundosenano() {
 
@@ -33,5 +34,15 @@ public class main {
         System.out.println("El mayor numero entero representable por un short es: " + mayorShort);
         int mayorInt = Integer.MAX_VALUE;
         System.out.println("El mayor numero entero representable por un int es: " + mayorInt);
+    }
+    public static void mostrarMultiplosde5() {
+        int limiteSuperior = 100;
+        int suma = 0;
+        for (int i = 1; i <= limiteSuperior; i++) {
+            if (i % 5 == 0) {
+                suma += i;
+            }
+        }
+        System.out.println("La suma de los multiplos de 5 entre 1 y " + limiteSuperior + " es: " + suma);
     }
 }
